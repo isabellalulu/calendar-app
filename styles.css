@@ -4,17 +4,20 @@
   
   
   body {
+
     margin: 0;
     width: 100vw;
     height: 100vh;
-  
-    background: white;
     user-select: none;
     -webkit-app-region: drag;
+    background-image: url("images/SIZE1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
   }
   
   .app {
-    padding: 16px;
   }
   
   button,
@@ -24,3 +27,12 @@
     -webkit-app-region: no-drag;
     cursor: pointer;
   }
+
+  .container-imagem {
+    width: 193px;
+    height: 150px;
+    background-image: url('images/SIZE2.png'); 
+    background-size: cover; 
+    background-position: center;
+    margin: 10px 10px 70px 10px;
+}
