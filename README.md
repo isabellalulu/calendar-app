@@ -1,4 +1,22 @@
 # Star Calendar
 
-## 📥 Download
-Você pode baixar a versão mais recente do Star Calendar para Mac [aqui](https://github.com/isabellalulu/calendar-app/releases/tag/v1.0.0#:~:text=3-,calendar.app.zip,-sha256%3Aa38af16dbb855e1c9eb31016b95e9904d2ba58ab82ccb99ff80bcfb95f2a37a0).
+---
+
+## Como rodar o projeto localmente
+
+Se você quiser explorar o código ou testar o app na sua máquina, siga os passos abaixo:
+
+> **Nota:** Certifique-se de ter o [Node.js](https://nodejs.org/) instalado.
+
+```bash
+# 1. Clone este repositório para sua máquina
+git clone [https://github.com/isabellalulu/calendar-app.git](https://github.com/isabellalulu/calendar-app.git)
+
+# 2. Entre na pasta do projeto
+cd calendar-app
+
+# 3. Instale as dependências (Electron e bibliotecas)
+npm install
+
+# 4. Execute o aplicativo
+npm start
