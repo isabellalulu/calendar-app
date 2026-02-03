@@ -4,6 +4,7 @@ function createWindow() {
   const win = new BrowserWindow({
     width: 214,
     height: 228,
+    icon: __dirname + '/images/icon.icns',
     resizable: false,
     maximizable: false,
     fullscreenable: false,

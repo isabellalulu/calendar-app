@@ -4,13 +4,15 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+   "build": "electron-packager . calendar --platform=darwin --arch=arm64 --out=dist --overwrite --icon=images/icon.icns"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@electron/packager": "^19.0.2",
     "electron": "^40.1.0"
   }
 }
