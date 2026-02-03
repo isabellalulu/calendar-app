@@ -2,37 +2,81 @@
     box-sizing: border-box;
   }
   
-  
   body {
-
     margin: 0;
-    width: 100vw;
-    height: 100vh;
-    user-select: none;
-    -webkit-app-region: drag;
+  width: 100vw;
+  height: 100vh;
+  user-select: none;
+  -webkit-app-region: drag;
+  border-radius: 20px;
+  margin: 0;
+  background: transparent;
+
+  }
+  
+ .app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 13.375rem;
+    padding: 1rem 1.0625;
+
+
     background-image: url("images/SIZE1.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    opacity: 0.8;
+ }
 
-  }
-  
-  .app {
-  }
-  
-  button,
-  input,
-  textarea,
-  select {
-    -webkit-app-region: no-drag;
-    cursor: pointer;
-  }
+ button,
+ input,
+ textarea,
+ select {
+   -webkit-app-region: no-drag;
+   cursor: pointer;
+ }
+ #calendar { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  .container-imagem {
+
     width: 193px;
     height: 150px;
+
     background-image: url('images/SIZE2.png'); 
     background-size: cover; 
     background-position: center;
+
     margin: 10px 10px 70px 10px;
-}
+
+    position: relative;
+    
+    }
+  
+  
+  #day {
+    color: #fff;
+    text-align: center;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 150px; 
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+  }
+  
+  #month {
+    color: #FFD64E;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+
+    position: absolute; 
+    top: 170px;    
+    left: 70px;
+  }
+  
