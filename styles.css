@@ -79,4 +79,15 @@
     top: 170px;    
     left: 70px;
   }
+  .calendar-icon {
+    position: absolute;
+
+    margin: 0 !important;
+
+    bottom: 10px;
+    right: 140px; /* Gruda na direita com 140px de folga */
+    width: 60px;        
+    height: 54px;
+    object-fit: contain;
+  }
   
