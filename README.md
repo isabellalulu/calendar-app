@@ -10,7 +10,7 @@ Se você quiser explorar o código ou testar o app na sua máquina, siga os pass
 
 ```bash
 # 1. Clone este repositório para sua máquina
-git clone [https://github.com/isabellalulu/calendar-app.git](https://github.com/isabellalulu/calendar-app.git)
+git clone [https://github.com/isabellalulu/calendar-app.git]
 
 # 2. Entre na pasta do projeto
 cd calendar-app
