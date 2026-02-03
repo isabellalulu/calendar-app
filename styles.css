@@ -79,15 +79,60 @@
     top: 170px;    
     left: 70px;
   }
+
   .calendar-icon {
     position: absolute;
 
     margin: 0 !important;
 
     bottom: 10px;
-    right: 140px; /* Gruda na direita com 140px de folga */
+    right: 140px; 
     width: 60px;        
     height: 54px;
     object-fit: contain;
   }
-  
+
+#close-btn {
+    position: absolute;
+    top: 5px;    
+    left: 5px;  
+    
+    width: 12px;  
+    height: 12px; 
+    background-color: #FFD64E;
+    border: none;
+    border-radius: 50%;
+    
+    /*x*/
+    color: #FFFFFF;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 8px; 
+    font-weight: bold;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Invisível por padrão */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    
+    cursor: pointer;
+    z-index: 10000;
+    -webkit-app-region: no-drag;
+}
+
+/* Aparece quando passa o mouse na área do app */
+.app:hover #close-btn {
+    opacity: 1;
+}
+
+/* X sumir quando não estiver com o mouse em cima*/
+#close-btn {
+    color: transparent;
+}
+
+#close-btn:hover {
+    color: #FFFFFF;
+    transform: scale(1.2); /* Aumenta ao clicar */
+}

@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, ipcMain } = require("electron");
 
 function createWindow() {
   const win = new BrowserWindow({
@@ -10,7 +10,8 @@ function createWindow() {
     frame: false, 
     transparent: true,
     webPreferences: {
-      contextIsolation: true
+        nodeIntegration: true,    // Permite usar o require()
+        contextIsolation: false
     }
   });
 
@@ -22,3 +23,7 @@ app.whenReady().then(createWindow);
 app.on("window-all-closed", () => {
   if (process.platform !== "darwin") app.quit();
 });
+
+ipcMain.on('close-app', () => {
+    app.quit();
+  });
